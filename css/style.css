@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,600;1,400&display=swap");
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  background-color: black;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  gap: 31px;
+}
+main .card {
+  width: 340px;
+  height: 340px;
+  background-color: white;
+  border-radius: 10% ;
+}
+
+.image {
+  display: flex;
+  width: 350px;
+  height: 575px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  contain: content;
+  background-image: url(../img/fundo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0.5em;
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.2431372549);
+}
+
+.btn-git {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: crimson;
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.2431372549);
+}
+
+.btn-git:hover {
+  background-color: crimson;
+  transition: 0.5s;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.0941176471);
+  background-color: crimson;
+}
+
+.btn:hover {
+  background-color: crimson;
+  transition: 0.5s;
+}
+
+.btn-top {
+  position: absolute;
+  bottom: 55%;
+  right: 3px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.0745098039);
+  background-color: crimson;
+  border-radius: 70%;
+}
+
+.btn-top:hover {
+  background-color: crimson;
+  transition: 0.5s;
+}
+
+.btn:active {
+  transform: translateY(4px);
+}
+
+.img-trs {
+  width: 30px;
+  filter: invert(100%);
+  -webkit-user-drag: none;
+}
+
+.img-git {
+  width: 50px;
+  filter: invert(100%);
+  -webkit-user-drag: none;
+}
+
+a {
+  -webkit-user-drag: none;
+}
+
+.lock {
+  width: 20px;
+  filter: invert(100%);
+  -webkit-user-drag: none;
+}
+
+input {
+  padding: 8px;
+  margin: 10px;
+}
+
+button {
+  padding: 8px;
+  background-color: crimson;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+h1 {
+  font-style: normal;
+  color: #353535;
+  margin-bottom: 10px;
+}
+
+.hdn-label {
+  opacity: 0%;
+  position: absolute;
+  top: 1%;
+  pointer-events: none;
+}
+
+input {
+  border-radius: 0.5em;
+  border: 1px solid crimson;
+  text-align: center;
+}
+
+input:focus {
+  outline-color: crimson;
+  color: #353535;
+}
+
+p {
+  color: #353535;
+  text-align: justify;
+  margin: 10px;
+}
+
+input::-moz-placeholder {
+  text-align: center;
+}
+
+input::placeholder {
+  text-align: center;
+}
+
+.card-saida {
+  width: 325px;
+  height: 511px;
+  background-color: white;
+  color: black;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  border: 3px solid crimson;
+  border-radius: 0.5em;
+  margin-bottom: 10px;
+}
+
+#position {
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  main {
+    height: unset;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+}

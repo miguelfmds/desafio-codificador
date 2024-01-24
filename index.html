@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href=".img/logo.jpg">
+    <title>Codificador de texto</title>
+</head>
+
+<body>
+    <main>
+        <div class="image">
+            <div class="card">
+                <h1>Codificador</h1>
+
+                <label class="hdn-label" for="original">Palavra:</label>
+                <input type="text" id="original" placeholder="Digite uma palavra"><br>
+
+                <button class="btn" onclick="criptografar()"><img src="./img/cadeado.png" class="lock"
+                        alt="">Criptografar</button>
+
+                <button class="btn" onclick="descriptografar()"><img src="./img/aberto.png" class="lock"
+                        alt="">Descriptografar</button>
+
+                <button class="btn-top" onclick="apagarResultado()"><img class="img-trs" src="./img/lixo.png"
+                        alt=""></button><br>
+
+                <button class="btn" id="position" onclick="copiar()">Copiar</button>
+            </div>
+
+            <button class="btn-git"><a href="https://github.com/miguelfmds" target="_blank"><img class="img-git"
+                        src="./img/git.png" alt=""></a></button>       
+        </div>
+
+        <div class="card-saida">
+            <h1>Resultado</h1>
+            <p id="resultado"></p>
+        </div>
+    </main>
+
+    <script src="cripto.js"></script>
+    
+</body>
+
+</html>
